@@ -1,0 +1,9 @@
+<!-- THE TASKS =============================================== -->
+<table class="table table-striped">
+	<thead>
+		<td>Latitud</td><td>Longitud</td><td>Zone</td><td>UTC Time</td><td>Local Time</td>
+	</thead>
+    <tr ng-repeat="coord in coordsStorage track by $index">
+        <td>{{ coord.Lat }}</td><td>{{ coord.Long }}</td><td>{{ coord.Zone }}</td><td>{{ coord.UTCtime }}</td><td>{{ coord.localTime }}</td>
+    </tr>
+</table>
